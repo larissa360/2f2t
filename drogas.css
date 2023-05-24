@@ -4,7 +4,7 @@
 }
 .menu{
     width: 100;
-    height: 150px;
+    height: 100px;
     background-color: rgb(205, 130, 243);
 }
 .conteudo {
@@ -14,4 +14,7 @@
     width: 100%;
     text-align: center;
     background-color: rgb(127, 118, 248);
+}
+.img-mobile {
+    width: 100%;
 }
