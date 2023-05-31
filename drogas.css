@@ -13,8 +13,26 @@
 .rodape {
     width: 100%;
     text-align: center;
-    background-color: rgb(127, 118, 248);
+    background-color: rgb(228, 164, 253);
 }
 .img-mobile {
     width: 100%;
+
+}
+@media screen and (min-width: 768px) {
+    .menu{
+        height: 150px;
+        background-color: aquamarine;
+    }
+    .conteudo-home{
+        display: flex;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .menu {
+        height: 150px;
+        background-color: rgb(64, 152, 252);
+    }
 }
