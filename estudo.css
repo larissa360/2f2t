@@ -1,1 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
 
+}
+body{
+    background-color: black ;
+}
+.item{
+    width: 95%;
+    height: 100px;
+    background-color: chartreuse;
+    color: red;
+    margin: 10px;
+}
+.conteudo {
+display: grid;
+grid-template-columns: 20% 20% 20% 20% 20%;
+grid-template-rows: 80% 100% 100% 100% 100%;
+}
+.barra{
+    background-color: fuchsia;
+    height: 25vh;
+}
+.lado{
+background-color: yellow;
+height: 25vh
+}
+.principal{
+background-color: chartreuse;
+height: 25vh
+}
+.rodape{
+background-color: orange;
+height: 25vh
+}
+.meu-site{
+
+}
