@@ -5,7 +5,7 @@
 .rodape {
     width: 100%;
     text-align: center;
-    background-color: rgb(228, 164, 253);
+    background-color: rgb(159, 255, 255);
 }
 .img-mobile {
     width: 100%;
@@ -13,8 +13,8 @@
 }
 @media screen and (min-width: 768px) {
     .menu{
-        height: 150px;
-        background-color: aquamarine;
+        height: 120px;
+        background-color: rgb(218, 68, 210);
     }
     .conteudo-home{
         display: flex;
@@ -23,9 +23,10 @@
 }
 
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1290px) {
     .menu {
-        height: 150px;
+        height: 120px;
         background-color: rgb(64, 152, 252);
     }
 }
+
