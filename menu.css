@@ -1,9 +1,9 @@
 /* Theming */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
 :root{
-    --white: #32cf79;
-    --black: #feffca;
-    --gray: #7da6ac;
+    --white: #84e6b0;
+    --black: #2c2c27;
+    --gray: #d2f3bc;
 } /* variables*/
 
 /* Reset */
@@ -29,7 +29,7 @@ ul{
     box-shadow: 1px 1px 5px 0px var(--gray);
     position: sticky;
     top: 0;
-    width: 100%;
+    width: calc(100vw);
 }
 /* Logo */
 .logo{
@@ -118,10 +118,46 @@ ul{
     top:0;
 }
 
+.conteudo{
+    width: 100vw;
+    display: grid;
+}
+.definicao {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+}
+#droga {
+    display: block;
+    width: 90%;
+}
+.geral{
+    width: 100vw;
+}
 
+.rodape {
+    width: 100vw;
+    text-align: center;
+    color: #110f0f;
+    background-color: var(--black);;
+}
 
-/* Responsiveness */
-@media (min-width: 768px) {
+.geral {
+    width: 100vw;
+    grid-area: "geral";
+}
+
+div[class^="item-"]{
+    background-color: var(--gray);
+    height: 200px;
+    margin: 5px;
+    grid-area: "info";
+}
+.info {
+    display: grid;
+}
+@media (min-width: 820px) {
     .nav{
         max-height: none;
         top: 0;
@@ -147,4 +183,53 @@ ul{
         width: 15vh;
         margin: 5px;
     }
+    .geral {
+        width: 70vw;
+    }
+    .item1 {
+        text-align: right;
+    }
+    #droga {
+        display: block;
+    }
+    .info {
+        grid-template-columns: 50% 50%;
+        grid-area: "info" "info";
+    }
+    .definicao {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--gray);
+
+    }
+
+    .hamb{
+        display: none;
+    }
+
+    #logo {
+        width: 15vh;
+        margin: 5px;
+    }
+    .info {
+        grid-template-columns: 33% 34% 33%;
+        grid-area:  "info" "info" "info";
+    }
+
 }
